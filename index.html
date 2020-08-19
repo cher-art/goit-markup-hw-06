@@ -17,9 +17,11 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <div class=" main-header">
-          <nav class=" main-nav">
-            <a href="" class="logo"><span class="color-text">Web</span>Studio</a>
+        <div class="main-header">
+          <nav class="main-nav">
+            <a href="" class="logo"
+              ><span class="color-text">Web</span>Studio</a
+            >
             <ul class="site-nav">
               <li class="item">
                 <a href="./index.html" class="current link">Студия</a>
@@ -30,41 +32,41 @@
               <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
           </nav>
-  
-            <ul class="auth-nav">
-              <li class="item">
-                <a href="" class="link">
-                  <svg class="link-svg mail">
-                    <use href="./images/sprite.svg#icon-mail"></use>
-                  </svg>
 
-                  <p>info@devstudio.com</p>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="link">
-                  <svg class="link-svg phone">
-                    <use href="./images/sprite.svg#icon-phone"></use>
-                  </svg>
-                  <p>+38 096 111 11 11</p>
-                </a>
-              </li>
-            </ul>
+          <ul class="auth-nav">
+            <li class="item">
+              <a href="" class="link">
+                <svg class="link-svg mail">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+
+                <p>info@devstudio.com</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <svg class="link-svg phone">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                <p>+38 096 111 11 11</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      
     </header>
 
     <main>
-<!-- ГЕРОЙ -->
+      <!-- ГЕРОЙ -->
       <section class="hero">
         <div class="hero-section">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
-          
       </section>
-<!-- ПРИЕМУЩЕСТВА -->
+      <!-- ПРИЕМУЩЕСТВА -->
       <section class="advantages">
         <div class="container">
           <h2 class="invisible">Преимущества</h2>
@@ -120,7 +122,7 @@
           </ul>
         </div>
       </section>
-<!-- О НАС -->
+      <!-- О НАС -->
       <section class="about-us container">
         <div class="about-us-section">
           <h2 class="title">Чем мы занимаемся</h2>
@@ -154,10 +156,8 @@
             </li>
           </ul>
         </div>
-          
-
       </section>
-<!-- НАША КОМАНДА -->
+      <!-- НАША КОМАНДА -->
       <section class="our-team">
         <div class="container our-team-container">
           <h2 class="title">Наша команда</h2>
@@ -333,9 +333,9 @@
           </ul>
         </div>
       </section>
-<!-- КЛИЕНТЫ -->
+      <!-- КЛИЕНТЫ -->
       <section class="clients container">
-      <h2 class="title">Постоянные клиенты</h2>
+        <h2 class="title">Постоянные клиенты</h2>
         <ul class="list">
           <li class="item">
             <a class="link" href="">
@@ -380,20 +380,19 @@
             </a>
           </li>
         </ul>
-    </section>
+      </section>
     </main>
 
     <footer class="page-footer">
       <div class="container flex">
         <div class="main-footer">
           <a href="" class="logo-footer">
-          <span class="color-text">Web</span>Studio</a
-        >
-        <p class="title">г. Киев, пр-т Леси Украинки, 26</p>
-        <p class="title-link">info@example.com</p>
-        <p class="title-link">+38 099 111 11 11</p>
+            <span class="color-text">Web</span>Studio</a
+          >
+          <p class="title">г. Киев, пр-т Леси Украинки, 26</p>
+          <p class="title-link">info@example.com</p>
+          <p class="title-link">+38 099 111 11 11</p>
         </div>
-        
 
         <div class="join-footer">
           <p class="join">ПРИСОЕДИНЯЙТЕСЬ</p>
@@ -431,64 +430,120 @@
 
         <div class="subscribe-footer">
           <p class="join">Подпишитесь на рассылку</p>
-          
-
-
+          <form class="subscribe-footer-form" action="">
+            <input
+              type="text"
+              class="footer-input"
+              placeholder="E-mail"
+              required
+            />
+            <button class="footer-button">
+              Подписаться
+              <svg class="footer-button-svg" style="width: 24px; height: 24px;">
+                <use href="./images/sprite.svg#icon-telegramm"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-      
-
       </div>
     </footer>
-<!-- МОДАЛЬНОЕ ОКНО -->
+    <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="modal is-hidden" data-modal>
       <div class="form-wrapper">
-
-      <button class="close-btn" type="button" data-modal-close>
-        <svg style="width: 18px; height: 18px;">
-          <use href="./images/sprite.svg#close-back"></use>
-        </svg>
-      </button>
+        <button class="close-btn" type="button" data-modal-close>
+          <svg style="width: 18px; height: 18px;">
+            <use href="./images/sprite.svg#close-back"></use>
+          </svg>
+        </button>
 
         <div class="modal-container">
           <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
-          
+
           <form class="modal-form" saction="">
             <div class="modal-form-block">
-              <label class="modal-form-label" for="name">
-                Имя
-              </label>
-              <input type="text" class="modal-form-input" placeholder="" required>
+              <div class="modal-form-container">
+                <label class="modal-form-label" for="name">Имя</label>
+                <input
+                  type="text"
+                  class="modal-form-input"
+                  placeholder=""
+                  required
+                />
+                <svg
+                  class="modal-form-container-svg"
+                  style="width: 18px; height: 18px;"
+                >
+                  <use href="./images/sprite.svg#icon-vector-1"></use>
+                </svg>
+              </div>
             </div>
 
             <div class="modal-form-block">
-              <label class="modal-form-label" for="name">
-                Телефон
-              </label>
-              <input type="text" class="modal-form-input" placeholder="" required>
+              <div class="modal-form-container">
+                <label class="modal-form-label" for="name">Телефон</label>
+                <input
+                  type="text"
+                  class="modal-form-input"
+                  placeholder=""
+                  required
+                />
+                <svg
+                  class="modal-form-container-svg"
+                  style="width: 18px; height: 18px;"
+                >
+                  <use href="./images/sprite.svg#icon-vector-2"></use>
+                </svg>
+              </div>
             </div>
 
             <div class="modal-form-block">
-              <label class="modal-form-label" for="name">
-                E-mail
-              </label>
-              <input type="text" class="modal-form-input" placeholder="" required>
+              <label class="modal-form-label" for="name">E-mail</label>
+              <div class="modal-form-container">
+                <input
+                  type="text"
+                  class="modal-form-input"
+                  placeholder=""
+                  required
+                />
+                <svg
+                  class="modal-form-container-svg"
+                  style="width: 18px; height: 18px;"
+                >
+                  <use href="./images/sprite.svg#icon-vector-3"></use>
+                </svg>
+              </div>
             </div>
             <div class="modal-form-block">
-              <label class="modal-form-label" for="">
-              Коментарии</label>
-              <textarea name="user-message" class="modal-form-message" id="" cols="30" rows="10"></textarea>
+              <label class="modal-form-label" for="">Коментарии</label>
+              <textarea
+                name="user-message"
+                class="modal-form-message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
             </div>
-            
-            
-            
+
             <div class="modal-form-checkbox">
-              <input type="checkbox" name="user-poloci" value="accept-policy" id="user-poloci" class="modal-form-check-policy">
-              <label for="user-policy" class="check-label" target="_blanck">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+              <input
+                type="checkbox"
+                name="user-poloci"
+                value="accept-policy"
+                id="user-poloci"
+                class="modal-form-check-policy"
+              />
+              <label
+                for="user-policy"
+                class="check-label modal-form-label"
+                target="_blanck"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#">Условия договора</a></label
+              >
+              <button class="modal-button">Отправить</button>
             </div>
-            <button class="modal-button hero-button">Отправить</button>
           </form>
         </div>
-          
       </div>
     </div>
   </body>
