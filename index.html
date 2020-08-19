@@ -22,7 +22,7 @@
             <a href="" class="logo"><span class="color-text">Web</span>Studio</a>
             <ul class="site-nav">
               <li class="item">
-                <a href="./index.html" class="link">Студия</a>
+                <a href="./index.html" class="current link">Студия</a>
               </li>
               <li class="item">
                 <a href="./portfolio.html" class="link">Портфолио</a>
@@ -37,6 +37,7 @@
                   <svg class="link-svg mail">
                     <use href="./images/sprite.svg#icon-mail"></use>
                   </svg>
+
                   <p>info@devstudio.com</p>
                 </a>
               </li>
@@ -57,8 +58,11 @@
     <main>
 <!-- ГЕРОЙ -->
       <section class="hero">
+        <div class="hero-section">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+          
       </section>
 <!-- ПРИЕМУЩЕСТВА -->
       <section class="advantages">
@@ -118,6 +122,7 @@
       </section>
 <!-- О НАС -->
       <section class="about-us container">
+        <div class="about-us-section">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="item">
@@ -148,11 +153,13 @@
               <h3 class="work">Дизайнерские решения</h3>
             </li>
           </ul>
+        </div>
+          
 
       </section>
 <!-- НАША КОМАНДА -->
       <section class="our-team">
-        <div class="container">
+        <div class="container our-team-container">
           <h2 class="title">Наша команда</h2>
           <ul class="list">
             <li class="about">
@@ -328,54 +335,52 @@
       </section>
 <!-- КЛИЕНТЫ -->
       <section class="clients container">
-        <div class="">
-          <h2 class="title">Постоянные клиенты</h2>
-            <ul class="list">
-              <li class="item">
-                <a class="link" href="">
-                  <svg class="link-svg">
-                    <use href="./images/sprite.svg#icon-client-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a class="link" href="">
-                  <svg class="link-svg">
-                    <use href="./images/sprite.svg#icon-client-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a class="link" href="">
-                  <svg class="link-svg">
-                    <use href="./images/sprite.svg#icon-client-3"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a class="link" href="">
-                  <svg class="link-svg">
-                    <use href="./images/sprite.svg#icon-client-4"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a class="link" href="">
-                  <svg class="link-svg">
-                    <use href="./images/sprite.svg#icon-client-5"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a class="link" href="">
-                  <svg class="link-svg">
-                    <use href="./images/sprite.svg#icon-client-6"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-        </div>
-      </section>
+      <h2 class="title">Постоянные клиенты</h2>
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="">
+              <svg style="width: 44px; height: 49px;">
+                <use href="./images/sprite.svg#icon-client-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" href="">
+              <svg style="width: 40px; height: 52px;">
+                <use href="./images/sprite.svg#icon-client-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" href="">
+              <svg style="width: 41px; height: 43px;">
+                <use href="./images/sprite.svg#icon-client-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" href="">
+              <svg style="width: 80px; height: 42px;">
+                <use href="./images/sprite.svg#icon-client-4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" href="">
+              <svg style="width: 59px; height: 47px;">
+                <use href="./images/sprite.svg#icon-client-5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" href="">
+              <svg style="width: 88px; height: 45px;">
+                <use href="./images/sprite.svg#icon-client-6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </section>
     </main>
 
     <footer class="page-footer">
@@ -390,8 +395,8 @@
         </div>
         
 
-        <div class="subscribe-footer">
-          <p class="subscribe">ПРИСОЕДИНЯЙТЕСЬ</p>
+        <div class="join-footer">
+          <p class="join">ПРИСОЕДИНЯЙТЕСЬ</p>
           <ul class="social-list">
             <li class="social-item">
               <a href="" class="social-link">
@@ -423,25 +428,67 @@
             </li>
           </ul>
         </div>
-      </div>
 
-      <!-- <div class="container">
-        <p class="subscribe">Подпишитесь на рассылку</p>
-        <input type="text" />
-        <a href="" class="button">
-          Подписаться
-          <img src="./images/telegram.svg" alt="" />
-        </a>
-      </div> -->
+        <div class="subscribe-footer">
+          <p class="join">Подпишитесь на рассылку</p>
+          
+
+
+        </div>
+      
+
+      </div>
     </footer>
 <!-- МОДАЛЬНОЕ ОКНО -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="modal is-hidden" data-modal>
       <div class="form-wrapper">
-          <button class="close-btn" type="button" data-modal-close>
-            <svg class="button-svg">
-              <use href="./images/sprite.svg#close-back" ></use>
-            </svg>
-          </button>
+
+      <button class="close-btn" type="button" data-modal-close>
+        <svg style="width: 18px; height: 18px;">
+          <use href="./images/sprite.svg#close-back"></use>
+        </svg>
+      </button>
+
+        <div class="modal-container">
+          <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+          
+          <form class="modal-form" saction="">
+            <div class="modal-form-block">
+              <label class="modal-form-label" for="name">
+                Имя
+              </label>
+              <input type="text" class="modal-form-input" placeholder="" required>
+            </div>
+
+            <div class="modal-form-block">
+              <label class="modal-form-label" for="name">
+                Телефон
+              </label>
+              <input type="text" class="modal-form-input" placeholder="" required>
+            </div>
+
+            <div class="modal-form-block">
+              <label class="modal-form-label" for="name">
+                E-mail
+              </label>
+              <input type="text" class="modal-form-input" placeholder="" required>
+            </div>
+            <div class="modal-form-block">
+              <label class="modal-form-label" for="">
+              Коментарии</label>
+              <textarea name="user-message" class="modal-form-message" id="" cols="30" rows="10"></textarea>
+            </div>
+            
+            
+            
+            <div class="modal-form-checkbox">
+              <input type="checkbox" name="user-poloci" value="accept-policy" id="user-poloci" class="modal-form-check-policy">
+              <label for="user-policy" class="check-label" target="_blanck">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+            </div>
+            <button class="modal-button hero-button">Отправить</button>
+          </form>
+        </div>
+          
       </div>
     </div>
   </body>
