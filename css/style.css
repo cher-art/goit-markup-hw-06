@@ -797,6 +797,7 @@ section .title {
 }
 
 .modal-form-block {
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -809,21 +810,28 @@ section .title {
   letter-spacing: 0.01em;
 
   color: var(--title-text-color);
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-container {
-  position: relative;
+ .modal-form-label:focus-within {
+} 
+
+.modal-form-block:focus-within .modal-form-container-svg {
+  fill: var(--accent-text-color);
+}
+
+.modal-form-label:focus{
+  fill: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .modal-form-container-svg {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-container:focus {
-  color: var(--accent-text-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input {
@@ -839,7 +847,9 @@ section .title {
 }
 
 .modal-form-input:hover,
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-form-message:hover,
+.modal-form-message:focus  {
   border-color: var(--accent-text-color);
 }
 
@@ -850,14 +860,35 @@ section .title {
   padding: 12px 16px;
   resize: none;
   outline: none;
+
+  border: 1px solid var(--accent-link-color);
+  border-radius: 4px;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .modal-form-checkbox {
   text-align: center;
-  height: 24px;
 }
 
-.check-label {
+.modal-form-check-policy{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px; 
+  border: 0;
+  padding:0;
+  clip: rect(0 0 0 0); 
+  overflow: hidden;
+}
+
+.checkbox-label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -865,6 +896,32 @@ section .title {
   line-height: 1.714;
 
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.checkbox-label .link{
+  margin-left: 5px;
+  color: var(--accent-text-color);
+}
+
+.checkbox-label::before {
+  display: block; 
+  content: "";
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--primery-text-color);
+  border-radius: 4px;
+
+}
+
+.modal-form-check-policy:checked + .checkbox-label::before{
+  color: var(--plain-text-color);
+  background-image: url('../images/ok.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--accent-text-color);
+
 }
 
 .modal-button {
@@ -872,7 +929,6 @@ section .title {
   min-width: 200px;
   height: 50px;
   margin-top: 30px;
-  margin-bottom: 40px;
   color: var(--plain-text-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

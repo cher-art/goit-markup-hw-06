@@ -458,88 +458,47 @@
 
         <div class="modal-container">
           <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
-
           <form class="modal-form" saction="">
             <div class="modal-form-block">
-              <div class="modal-form-container">
-                <label class="modal-form-label" for="name">Имя</label>
-                <input
-                  type="text"
-                  class="modal-form-input"
-                  placeholder=""
-                  required
-                />
-                <svg
-                  class="modal-form-container-svg"
-                  style="width: 18px; height: 18px;"
-                >
-                  <use href="./images/sprite.svg#icon-vector-1"></use>
-                </svg>
-              </div>
+                <label class="modal-form-label" for="name">
+                  Имя
+                  <input type="text" class="modal-form-input" placeholder=""required/>
+                  <svg class="modal-form-container-svg" style="width: 18px; height: 18px;">
+                    <use href="./images/sprite.svg#icon-vector-1"></use>
+                  </svg>
+              </label>
             </div>
 
             <div class="modal-form-block">
-              <div class="modal-form-container">
-                <label class="modal-form-label" for="name">Телефон</label>
-                <input
-                  type="text"
-                  class="modal-form-input"
-                  placeholder=""
-                  required
-                />
-                <svg
-                  class="modal-form-container-svg"
-                  style="width: 18px; height: 18px;"
-                >
-                  <use href="./images/sprite.svg#icon-vector-2"></use>
-                </svg>
-              </div>
+                <label class="modal-form-label" for="name">
+                  Телефон
+                  <input type="text" class="modal-form-input" placeholder=""required/>
+                  <svg class="modal-form-container-svg" style="width: 18px; height: 18px;">
+                    <use href="./images/sprite.svg#icon-vector-2"></use>
+                  </svg>
+              </label>
             </div>
 
             <div class="modal-form-block">
-              <label class="modal-form-label" for="name">E-mail</label>
-              <div class="modal-form-container">
-                <input
-                  type="text"
-                  class="modal-form-input"
-                  placeholder=""
-                  required
-                />
-                <svg
-                  class="modal-form-container-svg"
-                  style="width: 18px; height: 18px;"
-                >
+              <label class="modal-form-label" for="name">
+                Телефон
+                <input type="text" class="modal-form-input" placeholder=""required/>
+                <svg class="modal-form-container-svg" style="width: 18px; height: 18px;">
                   <use href="./images/sprite.svg#icon-vector-3"></use>
                 </svg>
-              </div>
-            </div>
+            </label>
+          </div>
+
             <div class="modal-form-block">
               <label class="modal-form-label" for="">Коментарии</label>
-              <textarea
-                name="user-message"
-                class="modal-form-message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Введите текст"
-              ></textarea>
+              <textarea class="modal-form-message" name="user-message"  cols="30" rows="10" placeholder="Введите текст"></textarea>
             </div>
 
-            <div class="modal-form-checkbox">
-              <input
-                type="checkbox"
-                name="user-poloci"
-                value="accept-policy"
-                id="user-poloci"
-                class="modal-form-check-policy"
-              />
-              <label
-                for="user-policy"
-                class="check-label modal-form-label"
-                target="_blanck"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="#">Условия договора</a></label
-              >
+            <div class="modal-form-block ">
+              <input class="modal-form-check-policy" type="checkbox" name="user-policy" value="accept-policy" id="user-policy"/>
+              <label class="checkbox-label" for="user-policy" target="_blanck" >
+                Соглашаюсь с рассылкой и принимаю
+                <a class="link" href="#">Условия договора</a></label>
               <button class="modal-button">Отправить</button>
             </div>
           </form>
