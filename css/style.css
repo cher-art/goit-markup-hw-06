@@ -584,7 +584,7 @@ section .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 29px;
+  /* padding: 10px 29px; */
   min-width: 200px;
   height: 50px;
   background-color: var(--accent-text-color);
